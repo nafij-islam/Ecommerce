@@ -8,6 +8,8 @@ import { IoIosSearch } from "react-icons/io";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineAddIcCall } from "react-icons/md";
 
 
 const icons = {
@@ -23,6 +25,8 @@ const icons = {
     Shoppingcart:AiOutlineShoppingCart,
     Favorite:MdOutlineFavoriteBorder,
     Usericon:FaRegUserCircle,
+    IoLocationOutline,
+    MdOutlineAddIcCall
 
 };
 

@@ -49,7 +49,7 @@ const MiddleNav = () => {
               onChange={handleTyping}
               name=""
               className="bg-gray-00 placeholder:font-public_sans
-              placeholder:body_sm_400 placeholder:text-gray-300
+              placeholder:body_sm_500 placeholder:text-gray-300
               rounded w-[700px] py-3 px-3 outline-none"
               placeholder="Search for anything..."
             />
@@ -61,7 +61,7 @@ const MiddleNav = () => {
             {searchiconshow == false && (
                <div className="absolute right-11 top-1/2 -translate-y-1/2">
               <Btn className="bg-warning-500 rounded py-1">
-                <span className="font-public_sans body_sm_500 font-medium">Search</span>
+                <span className="font-public_sans body_sm_500 ">Search</span>
               </Btn>
             </div>
             ) }
@@ -72,16 +72,16 @@ const MiddleNav = () => {
               (icon) =>
                 (icon.to === "/cart" ? (
                   <div className="relative">
-                    <span className="text-gray_00">
-                      <icon.icon size={30} color="#fff"/>
+                    <span className="text-gray_00 text-white hover:text-warning-400">
+                      <icon.icon size={30} />
                     </span>
                     <span className="absolute -top-2 right-4 w-5 h-5 bg-gray-00 rounded-full flex justify-center items-center body_sm_400">
                       1
                     </span>
                   </div>
                 ) : (
-                  <span className="text-gray_00">
-                    <icon.icon size={30} color="#fff"/>
+                  <span className="text-gray_00 text-white hover:text-warning-400">
+                    <icon.icon size={30} />
                   </span>
                 ))
             )}
