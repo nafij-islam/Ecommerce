@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../../common/Container";
 import { imgProvider } from "../../../helpers/imgProvider";
 import Btn from '../../common/Btn';
+import { FaArrowRight } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
             <h className="text-gray-00 font-public_sans font-medium text-[20px]">OFF</h>
           </div>
           <div>
-              <Btn className="rounded-xs font-public_sans font-bold text-[14px] cursor-pointer">Shop now</Btn>
+              <Btn className="rounded-xs font-public_sans py-3.5 px-6  font-bold text-[14px] bg-warning-500  flex items-center gap-2 cursor-pointer">Shop now<FaArrowRight /></Btn>
           </div>
         </div>
       </Container>

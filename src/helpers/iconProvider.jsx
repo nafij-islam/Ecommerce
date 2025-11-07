@@ -5,6 +5,9 @@ import { FaReddit } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { FaRegUserCircle } from "react-icons/fa";
 
 
 const icons = {
@@ -17,6 +20,9 @@ const icons = {
         { id:6, name: FaInstagram },
     ],
     IoIosSearch:IoIosSearch,
+    Shoppingcart:AiOutlineShoppingCart,
+    Favorite:MdOutlineFavoriteBorder,
+    Usericon:FaRegUserCircle,
 
 };
 

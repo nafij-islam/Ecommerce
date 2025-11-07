@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from './components/common/Container';
 import Home from './pages/Home';
 
 const App = () => {
