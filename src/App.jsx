@@ -1,12 +1,29 @@
-import React from 'react'
-import Home from './pages/Home';
+import React from "react";
+import Home from "./pages/Home";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { BrowserRouter, Routes, Route } from "react-router";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
 
 const App = () => {
+  const queryClient = new QueryClient();
+
   return (
     <>
-     <Home/>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+         <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
+      ,
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

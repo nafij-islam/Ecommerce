@@ -10,6 +10,10 @@ import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineAddIcCall } from "react-icons/md";
+import { TfiPackage } from "react-icons/tfi";
+import { CiTrophy } from "react-icons/ci";
+import { GoCreditCard } from "react-icons/go";
+import { FaHeadphonesAlt } from "react-icons/fa";
 
 
 const icons = {
@@ -26,7 +30,11 @@ const icons = {
     Favorite:MdOutlineFavoriteBorder,
     Usericon:FaRegUserCircle,
     IoLocationOutline,
-    MdOutlineAddIcCall
+    MdOutlineAddIcCall,
+    TfiPackage,
+    CiTrophy,
+    GoCreditCard,
+    FaHeadphonesAlt,
 
 };
 

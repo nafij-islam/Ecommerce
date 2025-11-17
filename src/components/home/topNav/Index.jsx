@@ -6,7 +6,7 @@ const TopNav = () => {
    
   const{ tovNav } = icons;
  
-  console.log(tovNav)
+  
   return (
     <section className='bg-secondary-700 py-4 border-b border-gray-600'>
        <Container>

@@ -18,7 +18,7 @@ const MiddleNav = () => {
       id: 2,
       to: "/wishlist",
       icon: Favorite,
-    },
+    },  
     {
       id: 2,
       to: "/user",
@@ -71,7 +71,7 @@ const MiddleNav = () => {
             {utisIcons?.map(
               (icon) =>
                 (icon.to === "/cart" ? (
-                  <div className="relative">
+                  <div key={icon.id} className="relative">
                     <span className="text-gray_00 text-white hover:text-warning-400">
                       <icon.icon size={30} />
                     </span>
