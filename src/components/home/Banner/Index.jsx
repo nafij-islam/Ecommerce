@@ -6,40 +6,44 @@ import { imgProvider } from "../../../helpers/imgProvider";
 
 const Banner = () => {
   return (
-    <section className="h-[55vh] py-5">
-      <Container className="h-full   ">
-        <div className="flex gap-x-5 justify-between h-full">
-          <div className="w-[70%] h-full bg-teal-300">
+    <section className="py-5">
+      <Container className="h-full">
+        <div className="flex flex-col lg:flex-row gap-5 h-full">
+          
+          {/* LEFT BIG SLIDER */}
+          <div className="w-full lg:w-[70%] h-[250px] sm:h-[350px] lg:h-[55vh] bg-teal-300">
             <Swiper
               spaceBetween={30}
-              pagination={{
-                clickable: true,
-              }}
+              pagination={{ clickable: true }}
               modules={[Pagination, EffectCards]}
-              effect={"cards"}
+              effect="cards"
               grabCursor={true}
-              className="mySwiper"
+              className="mySwiper h-full"
             >
               {[...new Array(6)].map((_, index) => (
-                <SwiperSlide key={index} style={{ height: "55vh" }}>
+                <SwiperSlide key={index} className="h-full">
                   <picture>
                     <img
                       src={imgProvider.bannerimg}
                       alt="Banner"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </picture>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
-          <div className="w-[30%] gap-y-5 flex flex-col bg-teal-300">
-            <div className="h-[50%] w-full ">
+
+          {/* RIGHT TWO SMALL SLIDERS */}
+          <div className="w-full lg:w-[30%] flex flex-col gap-5 bg-teal-300">
+            
+            {/* Top Slider */}
+            <div className="h-[180px] sm:h-[220px] lg:h-[26vh] w-full">
               <Swiper
-                effect={"coverflow"}
+                effect="coverflow"
                 grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
+                centeredSlides
+                slidesPerView="auto"
                 coverflowEffect={{
                   rotate: 50,
                   stretch: 0,
@@ -49,37 +53,26 @@ const Banner = () => {
                 }}
                 pagination={true}
                 modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
+                className="mySwiper h-full"
               >
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgtwo} />
-                </SwiperSlide>
+                {[...new Array(6)].map((_, i) => (
+                  <SwiperSlide key={i} className="h-full">
+                    <img
+                      src={imgProvider.bannerimgtwo}
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
-            <div className="h-[50%] w-full">
+
+            {/* Bottom Slider */}
+            <div className="h-[180px] sm:h-[220px] lg:h-[26vh] w-full">
               <Swiper
-                effect={"coverflow"}
+                effect="coverflow"
                 grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={"auto"}
+                centeredSlides
+                slidesPerView="auto"
                 coverflowEffect={{
                   rotate: 50,
                   stretch: 0,
@@ -89,26 +82,16 @@ const Banner = () => {
                 }}
                 pagination={true}
                 modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
+                className="mySwiper h-full"
               >
-                <SwiperSlide>
-                  <img src={imgProvider.bannerimgthree} />
-                </SwiperSlide>
-                   <SwiperSlide>
-                  <img src={imgProvider.bannerimgthree} />
-                </SwiperSlide>
-                   <SwiperSlide>
-                  <img src={imgProvider.bannerimgthree} />
-                </SwiperSlide>
-                   <SwiperSlide>
-                  <img src={imgProvider.bannerimgthree} />
-                </SwiperSlide>
-                   <SwiperSlide>
-                  <img src={imgProvider.bannerimgthree} />
-                </SwiperSlide>
-
-
-               
+                {[...new Array(5)].map((_, i) => (
+                  <SwiperSlide key={i} className="h-full">
+                    <img
+                      src={imgProvider.bannerimgthree}
+                      className="w-full h-full object-cover"
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
