@@ -3,7 +3,7 @@ import MiddleLogo from '../assets/images/MiddleNav Log.png'
 import bannerimg from '../assets/images/bannerimg.png'
 import bannerimgtwo from '../assets/images/bannerimgtwo.png'
 import bannerimgthree from '../assets/images/banneimgthree.png'
-
+import ProductVariantbanner from '../assets/images/productVariantbanner.png'
 
 const imgProvider = {
     logo,
@@ -11,6 +11,7 @@ const imgProvider = {
     bannerimg,
     bannerimgtwo,
     bannerimgthree,
+    ProductVariantbanner,
 }
 
 export { imgProvider  } ;

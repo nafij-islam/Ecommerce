@@ -6,6 +6,7 @@ import BottomNav from "./../components/home/BottomNav/Index";
 import Banner from "./../components/home/Banner/Index";
 import Features from './../components/home/Features/Index';
 import Category from './../components/home/category/Index';
+import ProductVariant from './../components/home/ProductVariant/Index';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Banner />
       <Features/>
       <Category/>
+      <ProductVariant/>
     </>
   );
 };
