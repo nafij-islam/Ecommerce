@@ -21,4 +21,15 @@ const getAllProduct = async () => {
   }
 };
 
-export { getCategory,getAllProduct };
+const getProductbyCategory = async (categoryName = "furniture") => {
+  try {
+    const { data, status, statusText } = await instance.get(
+      `/products/category/${categoryName}`
+    );
+    return { data, status, statusText };
+  } catch (error) {
+    console.error("Product Network Error", error);
+  }
+};
+
+export { getCategory, getAllProduct, getProductbyCategory };

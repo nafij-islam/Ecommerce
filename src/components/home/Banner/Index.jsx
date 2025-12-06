@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="flex flex-col lg:flex-row gap-5 h-full">
           
           {/* LEFT BIG SLIDER */}
-          <div className="w-full lg:w-[70%] h-[250px] sm:h-[350px] lg:h-[55vh] bg-teal-300">
+          <div className="w-full lg:w-[70%] h-[250px] sm:h-[350px] lg:h-[55vh]">
             <Swiper
               spaceBetween={30}
               pagination={{ clickable: true }}
@@ -35,7 +35,7 @@ const Banner = () => {
           </div>
 
           {/* RIGHT TWO SMALL SLIDERS */}
-          <div className="w-full lg:w-[30%] flex flex-col gap-5 bg-teal-300">
+          <div className="w-full lg:w-[30%] flex flex-col gap-5">
             
             {/* Top Slider */}
             <div className="h-[180px] sm:h-[220px] lg:h-[26vh] w-full">
