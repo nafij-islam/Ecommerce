@@ -32,4 +32,8 @@ const getProductbyCategory = async (categoryName = "furniture") => {
   }
 };
 
-export { getCategory, getAllProduct, getProductbyCategory };
+
+
+
+
+export { getCategory, getAllProduct, getProductbyCategory,};

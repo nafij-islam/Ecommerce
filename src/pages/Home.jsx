@@ -13,10 +13,6 @@ import BestProducts from './../components/home/bestPoduct/Index';
 const Home = () => {
   return (
     <>
-      <Header />
-      <TopNav />
-      <MiddleNav />
-      <BottomNav />
       <Banner />
       <Features/>
       <Category/>
