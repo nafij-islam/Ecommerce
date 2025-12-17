@@ -40,10 +40,7 @@ const Shop = () => {
             </CategoryList>
             {/* price range */}
             <PriceRange/> 
-            <div>
-              <button className="py-1 border mr-4 px-5">Min Price</button>
-              <button className="py-1 border px-5">Max Price</button>
-            </div>
+           
            </div>
           </div>
           <div className=""></div>
