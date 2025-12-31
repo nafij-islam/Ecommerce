@@ -3,6 +3,7 @@ import Container from "../../common/Container";
 import { imgProvider } from "../../../helpers/imgProvider";
 import Btn from '../../common/Btn';
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router';
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
       <Container>
         <div className="flex justify-between">
           <picture>
-            <img src={imgProvider.logo} alt="" />
+              <Link to="/">
+                <img src={imgProvider.logo} alt="" />
+              </Link>
           </picture>
           <div className="flex gap-2 items-center">
             <h3 className="text-gray-00 font-medium text-[14px]">Up to</h3>
@@ -18,7 +21,11 @@ const Header = () => {
             <h className="text-gray-00 font-public_sans font-medium text-[20px]">OFF</h>
           </div>
           <div>
-              <Btn className="rounded-xs font-public_sans py-3.5 px-6  font-bold text-[14px] bg-warning-500  flex items-center gap-2 cursor-pointer">Shop now<FaArrowRight /></Btn>
+             <Link to="/shop">
+              <Btn  className="rounded-xs font-public_sans py-3.5 px-6 
+               font-bold text-[14px] bg-warning-500  flex items-center gap-2
+                cursor-pointer">Shop now<FaArrowRight /></Btn>
+             </Link>
           </div>
         </div>
       </Container>
