@@ -4,27 +4,31 @@ import { useCategory } from "../hooks/useCategory";
 import CategoryList from "./../components/shop/Left/category/CategoryList";
 import CategoryitemList from "./../components/shop/Left/category/Categoryitem";
 import Container from "./../components/common/Container";
-import SkeletonCard from './../components/common/Skeleton';
-import ErrorPage from './../components/common/Error';
-import PriceRange from './../components/shop/Left/pricerange/PriceRange';
+import SkeletonCard from "./../components/common/Skeleton";
+import ErrorPage from "./../components/common/Error";
+import PriceRange from "./../components/shop/Left/pricerange/PriceRange";
 
 const Shop = () => {
-  const { isPending:categoryListPending, error:categoryListError, data:categoryListData } = useCategory();
- 
- if (categoryListPending) {
-  return (
-    <Container>
-      <SkeletonCard/> 
-    </Container>
-  )
- }
+  const {
+    isPending: categoryListPending,
+    error: categoryListError,
+    data: categoryListData,
+  } = useCategory();
+
+  if (categoryListPending) {
+    return (
+      <Container>
+        <SkeletonCard />
+      </Container>
+    );
+  }
   if (categoryListError) {
-  return (
-    <Container>
-      <ErrorPage/>
-    </Container>
-  )
- }
+    return (
+      <Container>
+        <ErrorPage />
+      </Container>
+    );
+  }
 
   return (
     <section>
@@ -34,14 +38,13 @@ const Shop = () => {
       <Container>
         <div className="grid grid-cols-[30%70%]">
           <div className="">
-           <div className="flex flex-col gap-y-5">
-             <CategoryList>
-              <CategoryitemList cItem={[...categoryListData.data]}/>
-            </CategoryList>
-            {/* price range */}
-            <PriceRange/> 
-           
-           </div>
+            <div className="flex flex-col gap-y-5">
+              <CategoryList>
+                <CategoryitemList cItem={[...categoryListData.data]} />
+              </CategoryList>
+              {/* price range */}
+              <PriceRange />
+            </div>
           </div>
           <div className=""></div>
         </div>

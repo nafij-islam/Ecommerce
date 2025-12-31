@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Layouts from './components/common/Layouts';
 import Shop from './pages/Shop';
 import {QueryClient,QueryClientProvider,useQuery,} from "@tanstack/react-query";
+import Signup from './pages/Signup';
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ const App = () => {
             <Route element={<Layouts />}>
              <Route path="/" element={<Home/>}/>
              <Route path="/shop" element={<Shop/>}/>
+             <Route path="/signup" element={<Signup/>}/>
             </Route>
           </Routes>
         </BrowserRouter>
