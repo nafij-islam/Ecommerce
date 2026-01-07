@@ -24,7 +24,7 @@ const ProductVariant = () => {
   const productsToShow = selectedCategory === "all"? allProductData?.data?.products: categoryProducts?.data?.products;
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gray-100">
       <Container>
         <div className="flex flex-col lg:flex-row gap-6">
    

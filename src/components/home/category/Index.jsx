@@ -32,7 +32,7 @@ const Index = () => {
 
   
   return (
-    <section>
+    <section className="bg-gray-100">
       <Container>
         {/* GRID সরানো হয়েছে */}
         <Swiper

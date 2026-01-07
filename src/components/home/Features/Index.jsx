@@ -34,7 +34,7 @@ const Features = () => {
   ]);
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gray-200">
       <Container>
         <div className="border border-gray-200 grid grid-cols-4 py-3 ">
           {data?.map((item) => (
